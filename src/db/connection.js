@@ -1,4 +1,5 @@
 require("dotenv").config();
+const mongoose = require("mongoose")
 console.log(process.env.MONGO_URI);
 
 const connection = async () => {
@@ -9,3 +10,5 @@ const connection = async () => {
         console.log(error)
     }
 }
+
+connection();
